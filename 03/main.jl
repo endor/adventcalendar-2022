@@ -1,9 +1,7 @@
 
 function line_to_item(line)
-  len = trunc(Int, length(line) / 2)
-  c1 = split(line, "")
-  c2 = splice!(c1, (len+1):length(c1))
-  first(c1 ∩ c2)
+  len = length(line)
+  first(line[1:len÷2] ∩ line[len÷2+1:end])
 end
 
 function item_to_priority(item)
