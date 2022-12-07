@@ -42,16 +42,12 @@ end
 
 parts = split(readchomp("input.txt"), "\n\n")
 
-stacks = parse_stacks(parts[1])
+stacks1 = parse_stacks(parts[1])
+stacks2 = parse_stacks(parts[1])
 for step in split(parts[2], "\n")
   step = parse_step(step)
-  move1!(stacks, step)
+  move1!(stacks1, step)
+  move2!(stacks2, step)
 end
-println(String(map(s -> first(s), stacks)))
-
-stacks = parse_stacks(parts[1])
-for step in split(parts[2], "\n")
-  step = parse_step(step)
-  move2!(stacks, step)
-end
-println(String(map(s -> first(s), stacks)))
+println(String(map(s -> first(s), stacks1)))
+println(String(map(s -> first(s), stacks2)))

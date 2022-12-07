@@ -12,7 +12,7 @@ function start_marker(filename, unique_characters)
     for c in readeach(f, Char)
       push!(buffer, c)
 
-      if length(buffer) == unique_characters && length(unique(buffer)) == length(buffer)
+      if length(unique(buffer)) == unique_characters
         break
       end
 
