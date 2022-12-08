@@ -1,7 +1,3 @@
-import Pkg
-
-Pkg.add("Match")
-
 using Match
 
 function part1(p1, p2)

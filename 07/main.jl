@@ -1,10 +1,6 @@
-import Pkg
+using DataStructures: DefaultDict
 
-Pkg.add("DataStructures")
-
-using DataStructures
-
-directories = DataStructures.DefaultDict(0)
+directories = DefaultDict(0)
 current_directory = []
 
 for line in readlines("input.txt")

@@ -1,4 +1,3 @@
-
 function line_to_item(line)
   len = length(line)
   first(line[1:len÷2] ∩ line[len÷2+1:end])

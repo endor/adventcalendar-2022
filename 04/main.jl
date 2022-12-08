@@ -14,5 +14,5 @@ println(length(filter(pairs()) do pair
 end))
 
 println(length(filter(pairs()) do pair
-  !isempty(range(pair[1][1], stop = pair[1][2]) ∩ range(pair[2][1], stop = pair[2][2]))
+  !isempty(range(pair[1][1], pair[1][2]) ∩ range(pair[2][1], pair[2][2]))
 end))

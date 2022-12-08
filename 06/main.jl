@@ -1,8 +1,4 @@
-import Pkg
-
-Pkg.add("DataStructures")
-
-using DataStructures
+using DataStructures: CircularBuffer
 
 function start_marker(filename, unique_characters)
   buffer = CircularBuffer(unique_characters)

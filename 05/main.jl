@@ -29,7 +29,7 @@ function parse_step(step)
 end
 
 function move1!(stacks, step)
-  for _ in range(1, stop = step[1])
+  for _ in range(1, step[1])
     crate = popfirst!(stacks[step[2]])
     pushfirst!(stacks[step[3]], crate)
   end
